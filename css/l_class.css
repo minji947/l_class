@@ -1,0 +1,338 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+KR:wght@200..900&display=swap');
+/*  font-family: "Nanum Myeongjo", serif; */
+
+
+img {width: 100%;}
+p {word-break: keep-all; line-height: 1.4;}
+.cont_wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    z-index: 10;
+    background: #1b1614ee;
+}
+.header_inner {
+    width: 100%;
+    height: 100%;
+}
+header h1 {
+    position: absolute;
+    top: 50%; left: 70px;
+    transform: translateY(-50%);
+    width: 60px; height: 60px;
+    box-sizing: border-box;
+}
+header h1 a {
+    display: block;
+    height: 100%;
+}
+header h1 img {
+    padding: 1px;
+    border-radius: 50%;
+    background: #ffffff62;
+    box-sizing: border-box;
+}
+header .gnb {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+header .gnb a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff6f;
+    display: block;
+}
+header .gnb > li > a {
+    line-height: 90px;
+}
+header .gnb > li:hover > a {
+    color: #fff;
+}
+header .gnb > li > a:before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 6px;
+    background: #ffaf6d60;
+    z-index: -1;
+    transition: all 0.3s;
+}
+header .gnb > li:hover > a:before {
+    width: 100%;
+}
+header .gnb li {
+    position: relative;
+    width: 25%;
+}
+header .depth2 {
+    position: absolute;
+    top: 0px; left: 0;
+    padding-top: 130px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: none;
+}
+header .depth2 li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+header .depth2 li a {
+    display: block;
+    transition: all 0.3s;
+}
+header .depth2 li:hover a {
+    color: #fff;
+}
+header .depth2_bg {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: -1;
+    height: 0;
+    background: #1b1614;
+}
+
+header .util a {
+    display: block;
+}
+header .util {
+    position: absolute;
+    top: 50%; right: 70px;
+    transform: translateY(-50%);
+    display: flex;
+    width: 8%;
+}
+header .util a {
+    display: block;
+    width: 26px;
+}
+header .util a + a {
+    margin-left: 25px;
+}
+.mobile_btn {display: none;}
+
+/* #main_visual */
+#main_visual {
+    position: relative;
+    height: 800px;
+}
+#main_visual .main_text_area {
+    position: absolute;
+    bottom: 20%; left: 15%;
+    z-index: 2;
+    font-size: 40px;
+    font-family: "Nanum Myeongjo", serif;
+    line-height: 1.7;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+#main_visual .main_text_area strong {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+#main_visual .swiper-slide {
+    background: no-repeat center / cover;
+}
+.mySwiper {
+    height: 100%;
+}
+#main_visual .pic1 {
+    background-image: linear-gradient(#00000060, #00000000), url(../img/img_main_visual01.jpg);
+    background-position: bottom;
+}
+#main_visual .pic2 {
+    background-image: linear-gradient(#00000060, #00000000), url(../img/img_main_visual02.jpg);
+}
+#main_visual .pic3 {
+    background-image: linear-gradient(#00000060, #00000000), url(../img/img_main_visual03.jpg);
+}
+.swiper-pagination-bullet-active {
+    position: relative;
+    background: none;
+}
+.swiper-pagination-bullet-active::before {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    background: #3d1f0b;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    content: '';
+}
+
+/* contents01 */
+#contents01 .cont_wrap {
+    padding: 75px 2% 150px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.intro_img {
+    width: 52%;
+    height: 100%;
+    background: url(../img/dane-deaner-JNpmCYZID68-unsplash.jpg) no-repeat center / cover;
+}
+.intro_text_area {
+    width: 42%;
+    box-sizing: border-box;
+}
+.intro_text_area .b_text {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Nanum Myeongjo", serif;
+    color: #5a341e;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.s_text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* layout */
+h2 {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+/* contents02 */
+#contents02 .cont_wrap {
+    padding: 0 2% 200px;
+}
+.product_area {
+    display: flex;
+    justify-content: space-between;
+}
+.product_box {
+    width: 23%;
+    position: relative;
+    border: 1px transparent solid;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+.product_box:hover {
+    border-color: #5a341e5e;
+}
+.product_box figure {
+    height: 300px;
+    background: url(../img/img_product_slim.jpg) no-repeat center / cover;
+    margin-bottom: 20px
+}
+figure.product02 {
+    background-image: url(../img/img_product_oneslip.jpg);
+}
+figure.product03 {
+    background-image: url(../img/img_product_handy.jpg);
+}
+figure.product04 {
+    background-image: url(../img/img_product_notebook.jpg);
+}
+.product_info > span {
+    position: absolute;
+    top: 30px; left: 35px;
+    background: #a5390e;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+.product_info .product_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.product_info .price {
+    font-weight: 600;
+}
+
+/* contents03 */
+#contents03 .cont_wrap {
+    padding: 0 2% 150px;
+}
+.class_area {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.class_area li {
+    width: 50%;
+    height: 500px;
+}
+.class_area li a {
+    display: block;
+    width: 100%; height: 100%;
+    position: relative;
+    transition: all 0.4s;
+}
+.class_area li a .class_text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff8c;
+}
+.class_area li a .class_text strong {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.class_area li a:hover .class_text strong {
+    color: #fff;
+}
+.class_area li a .class_text p {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.class_area li:hover a .class_text p {
+    opacity: 1;
+}
+.class_area .one_day_class {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/la-compagnie-robinson-nijXsx-oI7Y-unsplash.jpg) no-repeat center / cover;
+}
+.class_area .weekly_class {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/alexandr-sadkov-BnG4KWAzt9c-unsplash.jpg) no-repeat top 60% left 0 / cover;
+}
+.class_area li a:hover {
+    background: #312117ba;
+}
+
+/* footer */
+footer {
+    background: #1b1614ee;
+}
+footer p {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff73;
+}

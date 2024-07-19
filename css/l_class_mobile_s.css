@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* header */
+header h1 {
+    left: 30px;
+    width: 40px; height: 40px;
+}
+header .gnb {
+    position: absolute;
+    top: 80px; 
+    display: block;
+    width: 100%;
+    display: none;
+}
+header .gnb li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+header .gnb > li > a {
+    line-height: 50px;
+    color: #fff;
+}
+
+header .util {
+    top: 300px; right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 50%;
+}
+header .util a {
+    width: 26px;
+}
+header li ul.depth2 {
+    position: static;
+    padding: 20px 0;
+    background: #a3a3a354;
+}
+
+.mobile_btn {
+    display: block;
+    position: absolute;
+    top: 50%; right: 30px;
+    transform: translateY(-50%);
+}
+.mobile_btn a {
+    display: block;
+}
+
+header .depth2 {
+    display: none;
+}
+header .depth2_bg {
+    height: 0vh;
+}
+
+/* gnb hover none */
+header .gnb > li:hover > a:before {
+    width: 0;
+}
+
+/* main_visual */
+#main_visual {
+    height: 500px;
+}
+#main_visual .pic2 {
+    background-size: cover;
+}
+#main_visual .main_text_area {
+    width: 80%;
+    bottom: 10%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    line-height: 1.7;
+}
+
+/* contents01 */
+#contents01 .cont_wrap {
+    padding: 50px 0 80px;
+    height: auto;
+    display: block;
+}
+.intro_img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.intro_text_area {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.intro_text_area .b_text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.s_text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* layout */
+h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* contents02 */
+#contents02 .cont_wrap {
+    padding: 0 2% 80px;
+}
+.product_area {
+    display: block;
+}
+.product_box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.product_box a {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product_box figure {
+    width: 48%;
+    height: 200px;
+    margin-bottom: 0;
+}
+.product_info {
+    width: 40%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+/* contents03 */
+.class_area {
+    display: block;
+}
+.class_area li {
+    width: 100%;
+    height: 250px;
+}
+
+/* footer */
+footer {
+    font-size: 12px;
+}
